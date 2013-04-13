@@ -4,17 +4,23 @@
 	<head>
 	
 		<title>{% block title %}{{ title }} | {% trans 'Django site admin hello' %}{% endblock %}</title>
-		
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/style.css">
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}/css/bootstrap-responsive.css">
 	</head>
 	<body>
-	
+		<div class="hero-unit">
 
 		{% block branding %}
 		<h1 id="site-name">{% trans 'Aplicacion Django' %}</h1>
 		{% endblock %}
-
+		<ul class="nav nav-pills">
+			<li class="activate">
+				<a href="/admin/">Login</a>
+		
 		{% block nav-global %}{% endblock %}
 
+	</div>
 	</body>
 </html>
 

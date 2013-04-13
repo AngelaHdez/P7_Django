@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/style.css">
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style.css">
 		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}/css/bootstrap-responsive.css">
 		<title>Polls</title>
@@ -13,8 +13,8 @@
       				<a id="logo" href="/pages/index/">Sample App</a>
       				<nav>
         				<ul class="nav pull-right">
-				          <li><a href="/polls/">Home</a><i class="icon-home icon-white"></i></li>
-				          <li><a href="/admin/">Sign in</a><i class="icon-off icon-white"></i></li>
+				          <li><a href="/polls/">Home</a></li>
+				          <li><a href="/admin/">Sign in</a></li>
 				        </ul>
 				    </nav>
 				</div>
@@ -28,14 +28,17 @@
 			{% endblock content %}
 			<footer class="footer">
 				<small>
-			    	<a href="http://railstutorial.org/">Rails Tutorial</a>by Michael Hartl</small>
-			  		<nav>
-					    <ul class="nav pull-right">
-					    	<li><a href="/pages/about/">About</a><i class="icon-list icon-black"></i></li>
-					      	<li><a href="/pages/contac/">Contact</a><i class="icon-comment icon-black"></i></li>
-					      	<li><a href="http://news.railstutorial.org/">News</a><i class="icon-file icon-black"></i></li>
+			    	<a href="http://railstutorial.org/">Rails Tutorial</a>by Michael Hartl
+			    </small>
+			    <div>
+			  		<nav class="nav pull-right">
+					    <ul id="boton"> 
+					    	<li><i class="icon-list icon-black"></i><a href="/pages/about/">About</a></li>
+					      	<li><i class="icon-comment icon-black"></i><a href="/pages/contac/">Contact</a></li>
+					      	<li><i class="icon-file icon-black"></i><a href="http://news.railstutorial.org/">News</a></li>
 					    </ul>
-			  	</nav>
+			  		</nav>
+			  	</div>
 			</footer>
 		</div>
 	</body>

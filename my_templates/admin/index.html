@@ -1,7 +1,11 @@
 <html>
     <head>
+
         {% extends "admin/base_site.html" %}
         {% load i18n admin_static %}
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/style.css">
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}/css/bootstrap-responsive.css">
     </head>
     <body>
     {% block coltype %}colMS{% endblock %}
