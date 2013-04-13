@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/style.css">
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}/css/bootstrap-responsive.css">
+		<title>Polls</title>
+	</head>
+	<body>
+		<header class="navbar navbar-fixed-top navbar-inverse">
+   			<div class="navbar-inner">
+    			<div class="container">
+      				<a id="logo" href="/pages/index/">Sample App</a>
+      				<nav>
+        				<ul class="nav pull-right">
+				          <li><a href="/polls/">Home</a><i class="icon-home icon-white"></i></li>
+				          <li><a href="/admin/">Sign in</a><i class="icon-off icon-white"></i></li>
+				        </ul>
+				    </nav>
+				</div>
+  			</div>
+		</header>
+		<div class="container">
+			<title>POLLS</title>
+			<h1>POLLS</h1>
+			{% block content %}
+
+			{% endblock content %}
+			<footer class="footer">
+				<small>
+			    	<a href="http://railstutorial.org/">Rails Tutorial</a>by Michael Hartl</small>
+			  		<nav>
+					    <ul class="nav pull-right">
+					    	<li><a href="/pages/about/">About</a><i class="icon-list icon-black"></i></li>
+					      	<li><a href="/pages/contac/">Contact</a><i class="icon-comment icon-black"></i></li>
+					      	<li><a href="http://news.railstutorial.org/">News</a><i class="icon-file icon-black"></i></li>
+					    </ul>
+			  	</nav>
+			</footer>
+		</div>
+	</body>
+</html>
